@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  width:100% ;
+  margin: auto;
+  font-family: "Crimson Pro", serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.bg-logo {
+  height: 422px;
 }
 
 .App-logo {
@@ -10,11 +18,16 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
+    -webkit-animation: App-logo-spin infinite 20s linear;
+}
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('/public/image/log.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,8 +37,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  outline: auto;
+  background-color: transparent;
+  color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: grey;
+  color:black;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +57,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.about {
+  padding: 20px;
+  font-size: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
