@@ -4,13 +4,15 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form1 from './Form1';
+import Lifecycle from './Lifecycle';
+// import Form1 from './Form1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Form1 />
+    {/* <Form1 /> */}
+    <Lifecycle />
   </React.StrictMode>
 );
 
