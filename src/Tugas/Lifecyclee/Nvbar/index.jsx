@@ -21,6 +21,7 @@ export default class Nvbar extends React.Component {
 
     render() {
         const afterChange = (e) => {
+            e.preventDefault()
             axios
             .get(API_URL + e.target.value )
             .then(res => {

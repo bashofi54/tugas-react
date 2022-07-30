@@ -22,6 +22,7 @@ export default class Lifecycle extends React.Component {
         .then(res => {
         const first = res.data.articles;
         this.setState({ first });
+        console.log(first)
     })
     .catch(error => {
         alert({error})
