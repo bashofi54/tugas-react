@@ -62,6 +62,7 @@ function App() {
         </div>
       </div>
       <Label />
+      Learn React
     </div>
   );
 }
