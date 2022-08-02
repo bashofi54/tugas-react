@@ -50,6 +50,7 @@ function Hooks() {
 
 
     return (
+        <div className='main'>
         <div className='App'>
             <div>
             <Navbar bg="primary" variant="dark">
@@ -92,6 +93,7 @@ function Hooks() {
                 />
             ))}
             </Row>
+        </div>
         </div>
     );
 }

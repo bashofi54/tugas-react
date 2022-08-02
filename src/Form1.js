@@ -3,7 +3,7 @@ import Formm from './Tugas/StylingComponen/Formm';
 
 function Form1() {
     return (
-        <div>
+        <div className='main'>
             <FromTgs />
             <Formm />
         </div>

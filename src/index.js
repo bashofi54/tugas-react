@@ -4,7 +4,8 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Hooks from './Hooks';
+import Routing from './Routing';
+// import Hooks from './Hooks';
 // import Lifecycle from './Lifecycle';
 // import Form1 from './Form1';
 
@@ -14,7 +15,8 @@ root.render(
     {/* <App /> */}
     {/* <Form1 /> */}
     {/* <Lifecycle /> */}
-    <Hooks />
+    {/* <Hooks /> */}
+    <Routing />
   </React.StrictMode>
 );
 
