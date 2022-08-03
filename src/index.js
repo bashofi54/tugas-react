@@ -4,23 +4,25 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Routing from './Routing';
-import { BrowserRouter } from 'react-router-dom';
+// import Routing from './Routing';
+// import { BrowserRouter } from 'react-router-dom';
+import Redux from './Tugas/Redux';
 // import Hooks from './Hooks';
 // import Lifecycle from './Lifecycle';
 // import Form1 from './Form1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  //<BrowserRouter>
     <React.StrictMode>
       {/* <App /> */}
       {/* <Form1 /> */}
       {/* <Lifecycle /> */}
       {/* <Hooks /> */}
-      <Routing />
+      {/* <Routing /> */}
+      <Redux />
     </React.StrictMode>
-  </BrowserRouter>
+  // </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
