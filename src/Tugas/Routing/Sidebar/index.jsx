@@ -14,16 +14,16 @@ const Sidebar = () => {
                     <NavLink exact to = "/" activeClassName = "activeClicked" >
                         < CDBSidebarMenuItem icon = "user">Router</CDBSidebarMenuItem>
                     </NavLink >
-                    <NavLink exact to = "/style" activeClassName = "activeClicked" >
+                    <NavLink to = "/style" activeClassName = "activeClicked" >
                         < CDBSidebarMenuItem icon = "user">Style Component</CDBSidebarMenuItem>
                     </NavLink >
-                    <NavLink exact to = "/form" activeClassName = "activeClicked" >
+                    <NavLink to = "/form" activeClassName = "activeClicked" >
                         <CDBSidebarMenuItem icon = "user">Form</CDBSidebarMenuItem>
                     </NavLink >
-                    <NavLink exact to = "/lifecyle" activeClassName = "activeClicked" >
+                    <NavLink to = "/lifecycle" activeClassName = "activeClicked" >
                         < CDBSidebarMenuItem icon = "user">Lifecycle</CDBSidebarMenuItem>
                     </NavLink >
-                    <NavLink exact to = "/hook" activeClassName = "activeClicked" >
+                    <NavLink to = "/hook" activeClassName = "activeClicked" >
                         <CDBSidebarMenuItem icon = "user">Hook</CDBSidebarMenuItem>
                     </NavLink>
                 </CDBSidebarMenu >

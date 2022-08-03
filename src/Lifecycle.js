@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Row } from 'react-bootstrap';
 import News from './Tugas/Lifecyclee/News'
 
-export default class Lifecycle extends React.Component {
+class Lifecycle extends React.Component {
     constructor(props) {
         super(props)
         
@@ -51,3 +51,5 @@ export default class Lifecycle extends React.Component {
         console.log('WILL UNMOUNT')
     }
 }
+
+export default Lifecycle;
