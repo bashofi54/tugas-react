@@ -39,6 +39,7 @@ function App() {
           </div>
           <div className="col">
           <table border="2px" cellSpacing="3" cellPadding="5">
+            <tbody>
             <tr>
               <th>Nama</th>
               <th>Tempat Tinggal</th>
@@ -59,6 +60,7 @@ function App() {
               <td>Yogyakarta</td>
               <td>3</td>
             </tr>
+            </tbody>
           </table>
           </div>
         </div>

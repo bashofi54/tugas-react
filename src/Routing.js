@@ -4,6 +4,7 @@ import App from "./App"
 import Form1 from "./Form1"
 import Lifecycle from "./Lifecycle"
 import Hooks from "./Hooks"
+import Routee from "./Tugas/Routing/index"
 
 const Routing = () => {
     return (
@@ -11,7 +12,7 @@ const Routing = () => {
             <Router>
                 <Sidebar />
                 <Switch>
-                    <Route exact path="/" children={() => <App />} />
+                    <Route exact path="/" children={() => <Routee />} />
                     <Route path="/style" children={() => <App /> } />
                     <Route path="/form" children={() => <Form1 /> } />
                     <Route path="/lifecycle" children={() => <Lifecycle /> } />
