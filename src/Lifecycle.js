@@ -33,7 +33,7 @@ class Lifecycle extends React.Component {
         console.log('RENDER')
         const {first} = this.state
         return (
-        <div>
+        <div className='main'>
             <Nvbar />
             <Row>
                 {first && first.map((news) => (

@@ -4,9 +4,9 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Routing from './Routing';
+import Routing from './Routing';
 // import { BrowserRouter } from 'react-router-dom';
-import Redux from './Tugas/Redux';
+// import Redux from './Tugas/Redux';
 // import Hooks from './Hooks';
 // import Lifecycle from './Lifecycle';
 // import Form1 from './Form1';
@@ -19,8 +19,8 @@ root.render(
       {/* <Form1 /> */}
       {/* <Lifecycle /> */}
       {/* <Hooks /> */}
-      {/* <Routing /> */}
-      <Redux />
+      <Routing />
+      {/* <Redux /> */}
     </React.StrictMode>
   // </BrowserRouter>
 );
