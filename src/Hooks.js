@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import {Container, Form, Nav, Navbar, Row, } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar, Row, } from 'react-bootstrap';
 import News from './Tugas/Lifecyclee/News';
 import '../src/Tugas/Lifecyclee/Nvbar'
 
@@ -45,55 +45,51 @@ function Hooks() {
         }
     }
 
-
-
-
-
     return (
         <div className='main'>
-        <div className='App'>
-            <div>
-            <Navbar bg="primary" variant="dark">
-                <Container>
-                    <img src="https://eduwork.id/images/logo3.png" alt="lgo" className="lg"></img>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Bashofi</Nav.Link>
-                        <Nav.Link href="#features"><b>News</b></Nav.Link>
-                    </Nav>
-                    <Form className="d-flex" onSubmit={hanSubmite}>
-                        <Form.Control
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                        onChange={hanChange}
+            <div className='App'>
+                <div>
+                    <Navbar bg="primary" variant="dark">
+                        <Container>
+                            <img src="https://eduwork.id/images/logo3.png" alt="lgo" className="lg"></img>
+                            <Nav className="me-auto">
+                                <Nav.Link href="#home">Bashofi</Nav.Link>
+                                <Nav.Link href="#features"><b>News</b></Nav.Link>
+                            </Nav>
+                            <Form className="d-flex" onSubmit={hanSubmite}>
+                                <Form.Control
+                                    type="search"
+                                    placeholder="Search"
+                                    className="me-2"
+                                    aria-label="Search"
+                                    onChange={hanChange}
+                                />
+                            </Form>
+                        </Container>
+                    </Navbar>
+                </div>
+                <Row>
+                    {dataCari && dataCari.map((news, index) => {
+                        return (
+                            <News
+                                key={index}
+                                news={news}
+                            />
+                        )
+                    })}
+                </Row>
+                <br />
+                <br />
+                <br />
+                <Row>
+                    {newss && newss.map((news, index) => (
+                        <News
+                            key={index}
+                            news={news}
                         />
-                    </Form>
-                </Container>
-            </Navbar>
+                    ))}
+                </Row>
             </div>
-            <Row>
-            {dataCari && dataCari.map((news, index) => {
-                return (
-                        <News 
-                        key={index}
-                        news={news}
-                        />
-                )
-            })}
-            </Row>
-            <br />
-            <br />
-            <br />
-            <Row>
-            {newss && newss.map((news, index) => (
-                <News 
-                key={index}
-                news={news}
-                />
-            ))}
-            </Row>
-        </div>
         </div>
     );
 }
